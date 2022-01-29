@@ -6,6 +6,9 @@ if type brew &>/dev/null; then
     compinit
   fi
 
+# prompt
+PROMPT='%F{cyan}%n%F{white}@%F{blue}%T%f '
+
 # personal aliases
 # stash and previous branch
 alias gitaway="git stash && git checkout -" 
