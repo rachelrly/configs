@@ -25,3 +25,5 @@ alias gitaway="git stash && git checkout -"
 # previous branch and unstash
 alias gitback="git checkout - && git stash pop"
 alias herokupush="git push && git push heroku main"
+# edit VS Code settings.json
+alias editcode="nano Library/Application Support/Code/User/settings.json"
