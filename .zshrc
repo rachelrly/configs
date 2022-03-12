@@ -18,12 +18,16 @@ RPROMPT=\$vcs_info_msg_0_
 zstyle ':vcs_info:git:*' formats '%F{240}(%b)%r%f'
 zstyle ':vcs_info:*' enable git
 
-
-# personal aliases
 # stash and previous branch
 alias gitaway="git stash && git checkout -" 
+
 # previous branch and unstash
 alias gitback="git checkout - && git stash pop"
+
+# check out someone elses branch
+alias branch="git fetch && git checkout $1 && git pull"
+
 alias herokupush="git push && git push heroku main"
+
 # edit VS Code settings.json
 alias editcode="nano Library/Application Support/Code/User/settings.json"
